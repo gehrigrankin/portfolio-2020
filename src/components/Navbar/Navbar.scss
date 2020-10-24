@@ -1,5 +1,8 @@
 .Navbar {
-    background-color: #202020 ;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #1A1A1A ;
     box-shadow: -8px 0px 18px -12px rgba(135,206,235,1);
     
     float: right;
@@ -11,10 +14,15 @@
 
     .icon-tabs {
         margin: 30vh 0;
+        color: #323232;
 
         .active {
             background-color: #323232;
             color: #87CEEB;
         }
+        :hover {
+            
+        }
     }
 }
+ 
