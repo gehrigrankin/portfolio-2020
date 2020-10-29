@@ -19,7 +19,13 @@ class App extends React.Component {
     return (
       <div className="App">
         <StarBackground />
-        <Navbar activeTab={this.state.activeTab} setActiveTab={this.setActiveTab} />
+        <main>
+          <Navbar activeTab={this.state.activeTab} setActiveTab={this.setActiveTab} />
+
+          <div className="main-container">
+            <AboutMe />
+          </div>
+        </main>
       </div>
     );
   }

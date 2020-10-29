@@ -1,0 +1,29 @@
+@import '../../../public/base.scss';
+
+.AboutMe {
+    color: white;
+
+    .page-header {
+        font-size: 2rem;
+        font-weight: 600;
+        
+        .header-1 {
+            color: $primary-blue;
+            font-size: 2rem;
+
+            margin-bottom: .5rem;
+        }
+        .header-2 {
+            color: rgb(200,200,200);
+            font-size: 1.5rem;
+        }
+    }
+
+    .body {
+        background-color: grey;
+        padding: .5rem;
+        line-height: 1.5;
+
+        color: #363636;
+    }
+}
