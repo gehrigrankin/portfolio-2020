@@ -4,3 +4,11 @@
   width: 100vw;
   min-height: 100vh;
 }
+
+main {
+  margin-right: calc(1rem + 36px);
+}
+
+.main-container {
+  margin: 2rem;
+}

@@ -5,16 +5,20 @@
     background-color: #1A1A1A ;
     box-shadow: -8px 0px 18px -12px rgba(135,206,235,1);
     
-    float: right;
     height: 100vh;
+    width: 3.5rem;
     
     svg {
         padding: 1rem .5rem;
     }
 
-    .icon-tabs {
-        margin: 30vh 0;
+    .icon-container {
+        margin: 35vh 0;
         color: #323232;
+
+        .icon {
+            height: auto;
+        }
 
         .active {
             background-color: #323232;
