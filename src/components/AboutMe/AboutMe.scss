@@ -19,10 +19,17 @@
         }
     }
 
-    .body {
+    .text {
+        margin: auto;
+        margin-top: 10vh;
+        max-width: 750px;
         background-color: grey;
-        padding: .5rem;
+        padding: 1.25rem;
+        padding-right: 1rem;
         line-height: 1.5;
+        text-align: left;
+
+        border-top: 50px solid #262626;
 
         color: #363636;
     }
