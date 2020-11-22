@@ -1,0 +1,37 @@
+@import '../public/base.scss';
+
+.App {
+  text-align: center;
+  background-color: #070707;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  margin-right: calc(1rem + 36px);
+}
+
+.main-container {
+  text-align: left;
+
+  .page {
+    height: calc(100vh - 4rem);
+    padding: 2rem;
+  }
+}
+
+.header-1 {
+  color: $primary-purple;
+  font-size: 3rem;
+  font-weight: 600;
+
+
+  margin-bottom: .5rem;
+}
+.header-2 {
+  color: rgb(200,200,200);
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  margin-left: 4rem;
+}
