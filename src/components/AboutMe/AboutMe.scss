@@ -3,7 +3,17 @@
 .AboutMe {
     color: white;
 
+    .header-1 {
+        margin-top: 3rem;
+    }
+    .header-2 {
+        margin-left: 2rem;
+    }
+
     .text {
+        font-family: monospace;
+        font-size: 1.25rem;
+
         margin: auto;
         margin-top: 10vh;
         max-width: 750px;
