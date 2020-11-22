@@ -1,0 +1,19 @@
+.Skills {
+    font-family: monospace;
+
+    .description {
+        ul {
+            list-style-type: '- ';
+        }
+    }
+
+    .header-1 {
+        font-family: 'Bungee Hairline';
+        margin-bottom: 2rem;
+    }
+
+    .header-2 {
+        font-family: 'Bungee Hairline';
+        color: white;
+    }
+}
