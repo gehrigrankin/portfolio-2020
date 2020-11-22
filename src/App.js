@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { StarBackground } from './components/StarBackground';
 import { AboutMe } from './components/AboutMe';
 import { Skills } from './components/Skills';
+import { Projects } from './components/Projects';
 
 import './App.scss';
 
@@ -35,8 +36,9 @@ class App extends React.Component {
           <Navbar activeTab={this.state.activeTab} setActiveTab={this.setActiveTab} />
 
           <div className="main-container">
-            <AboutMe ref={1}/>
-            <Skills ref={2}/>
+            <AboutMe ref={1} />
+            <Skills ref={2} />
+            <Projects ref={3} />
           </div>
         </main>
       </div>
