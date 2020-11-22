@@ -11,14 +11,20 @@ class App extends React.Component {
   state = {
     activeTab: 1
   }
-  
+
+  componentDidMount() {
+    window.onbeforeunload = (e) => {
+      window.scrollTo(0, 0);
+    };
+  }
+
   setActiveTab = tab => {
     window.scrollTo({
       top: (tab * window.innerHeight) - window.innerHeight,
       behavior: 'smooth'
     });
 
-    this.setState({activeTab: tab})
+    this.setState({ activeTab: tab })
   }
 
   render() {
