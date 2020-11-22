@@ -18,13 +18,13 @@ export class NavbarContainer extends React.Component {
                         </Icon>
                     </div>
                     <div onClick={() => this.props.setActiveTab(2)} className={this.props.activeTab === 2 ? 'projects active' : 'projects'}>
-                       <Icon>
-                            <FontAwesomeIcon size="2x" icon={faFileCode} />
+                        <Icon>
+                            <FontAwesomeIcon size="2x" icon={faChartBar} />
                         </Icon>
                     </div>
                     <div onClick={() => this.props.setActiveTab(3)} className={this.props.activeTab === 3 ? 'skills active' : 'skills'}>
                         <Icon>
-                            <FontAwesomeIcon size="2x" icon={faChartBar} />
+                            <FontAwesomeIcon size="2x" icon={faFileCode} />
                         </Icon>
                     </div>
                     <div onClick={() => this.props.setActiveTab(4)} className={this.props.activeTab === 4 ? 'contact active' : 'contact'}>

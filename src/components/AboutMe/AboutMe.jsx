@@ -4,13 +4,10 @@ import './AboutMe.scss';
 
 export const AboutMe = () => {
     return (
-        <div className="AboutMe">
+        <div className="AboutMe page">
             <div className="page-header font-bungee">
                 <p className="header-1">Gehrig Rankin</p>
                 <p className="header-2">Full Stack Web Developer</p>
-            </div>
-            <div className="profile-pic">
-                
             </div>
             <div className="text">
                 To whom it may concern, <br/><br/>

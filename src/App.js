@@ -3,8 +3,9 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { StarBackground } from './components/StarBackground';
 import { AboutMe } from './components/AboutMe';
+import { Skills } from './components/Skills';
 
-import './App.css';
+import './App.scss';
 
 class App extends React.Component {
   state = {
@@ -12,6 +13,11 @@ class App extends React.Component {
   }
   
   setActiveTab = tab => {
+    window.scrollTo({
+      top: (tab * window.innerHeight) - window.innerHeight,
+      behavior: 'smooth'
+    });
+
     this.setState({activeTab: tab})
   }
 
@@ -23,7 +29,8 @@ class App extends React.Component {
           <Navbar activeTab={this.state.activeTab} setActiveTab={this.setActiveTab} />
 
           <div className="main-container">
-            <AboutMe />
+            <AboutMe ref={1}/>
+            <Skills ref={2}/>
           </div>
         </main>
       </div>
