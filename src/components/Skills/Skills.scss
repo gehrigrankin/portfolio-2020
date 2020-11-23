@@ -51,6 +51,10 @@
         margin: .5em;
     }
 
+    .technical-skills {
+        max-width: 600px;
+    }
+
     .skills-header {
         color: #b5b5b5;
         font-size: 1rem;
@@ -87,6 +91,7 @@
         width: 50%;
         
         .technical-skills {
+            margin: auto;
             padding: 0 1vw;
         }
     }
