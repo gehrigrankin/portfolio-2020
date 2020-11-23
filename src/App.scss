@@ -25,6 +25,7 @@ main {
 }
 
 .header-1 {
+font-family: 'Bungee Hairline';
   color: $primary-red;
   font-size: 3rem;
   font-weight: 600;
@@ -33,6 +34,7 @@ main {
   margin-bottom: .2rem;
 }
 .header-2 {
+  font-family: 'Bungee Hairline';
   color: rgb(200,200,200);
   font-size: 1.5rem;
   font-weight: 600;
@@ -40,9 +42,30 @@ main {
   margin-top: .5rem;
 }
 
+.primary-red-font {
+  color: $primary-red;
+}
 .secondary-red-font {
   color: $secondary-red;
 }
 .white-font {
   color: white;
+}
+
+input[type=text] {
+  background-color: transparent;
+  padding: 7px 10px;
+  display: inline-block;
+  border: none;
+  border-bottom: 1px solid $primary-red;
+  box-sizing: border-box;
+
+}
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #363636;
+  opacity: 1;
 }
