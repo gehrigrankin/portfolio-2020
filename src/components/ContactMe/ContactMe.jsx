@@ -14,7 +14,7 @@ export const ContactMe = () => {
                         <p>Rgrankin22@gmail.com</p>
 
                         <p>Phone: </p>
-                        <p>R(703) 939 - 7355</p>
+                        <p>(703) 939 - 7355</p>
 
                         <p>Email: </p>
                         <p>Rgrankin22@gmail.com</p>
@@ -53,5 +53,6 @@ export const ContactMe = () => {
                     </div>
                 </div>
             </div>
+        </div>
     );
 }

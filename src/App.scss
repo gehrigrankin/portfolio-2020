@@ -21,7 +21,7 @@ main {
 }
 
 .header-1 {
-  color: $primary-purple;
+  color: $primary-red;
   font-size: 3rem;
   font-weight: 600;
 
@@ -34,4 +34,11 @@ main {
   font-weight: 600;
   
   margin-top: .5rem;
+}
+
+.secondary-red-font {
+  color: $secondary-red;
+}
+.white-font {
+  color: white;
 }

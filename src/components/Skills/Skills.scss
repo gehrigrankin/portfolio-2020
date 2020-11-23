@@ -1,19 +1,75 @@
+@import '../../../public/base.scss';
+
 .Skills {
     font-family: monospace;
+    overflow: scroll;
+
+    .experience, .education, .technical-skills {
+        margin: 2em 0;
+    }
 
     .description {
         ul {
-            list-style-type: '- ';
+            list-style-type: none;
+            color: #b5b5b5 !important;
+
+            li::before {
+                content: '- ';
+                color: $secondary-red;
+            }
         }
     }
 
     .header-1 {
         font-family: 'Bungee Hairline';
-        margin-bottom: 2rem;
+        margin: 0;
     }
 
     .header-2 {
         font-family: 'Bungee Hairline';
         color: white;
+        margin: 0;
+    }
+
+    .job, .school {
+        margin: 1.5em 1em;
+    }
+
+    .job-title, .school-name {
+        color: $primary-red;
+        font-size: 1.25rem;
+        margin: 0;
+    }
+
+    .company, .area-of-study {
+        color: #b5b5b5;
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .description ul, .description p {
+        color: #939393;
+        margin: .5em;
+    }
+
+    .skills-header {
+        color: #b5b5b5;
+        font-size: 1rem;
+    }
+
+    .graph {
+        border-left: 2px solid grey;
+        margin-left: 10px;
+    }
+    .bar {
+        background-color: $primary-red;
+        height: 10px;
+        margin-right: 3px;
+    }
+    
+    .flex {
+        display: flex;
+        align-items: center;
     }
 }
+
