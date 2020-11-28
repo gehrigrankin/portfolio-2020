@@ -5,9 +5,11 @@ import { StarBackground } from './components/StarBackground';
 import { AboutMe } from './components/AboutMe';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
-import { ContactMe } from './components/ContactMe';
+import ContactMe from './components/ContactMe/ContactMe';
 
 import './App.scss';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
   state = {

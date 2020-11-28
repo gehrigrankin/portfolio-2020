@@ -4,63 +4,86 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faAddressBook } from '@fortawesome/free-solid-svg-icons';
 import Icon from 'react-bulma-components/lib/components/icon';
 
+import { Container, Row, Col, FormControl, Button } from 'react-bootstrap';
+
 import './ContactMe.scss';
 
-export const ContactMe = () => {
-    return (
-        <div className="ContactMe page">
-            <div className="page-header">
-                <p className="header-1">Contact Me</p>
-            </div>
-            <div className="container">
-                <div className="information">
-                    <p className="header-2">Email: </p>
-                    <p>Rgrankin22@gmail.com</p>
+class ContactMe extends React.Component {
+    state = {
+        email: '',
+        comapany: '',
+        message: ''
+    }
 
-                    <p className="header-2">Phone: </p>
-                    <p>(703) 939 - 7355</p>
+    handleChange = event => {
+        const { name, value } = event.target
+        this.setState({ [name]: event.target.value });
+    }
 
-                    <p className="header-2">LinkedIn: </p>
-                    <a target="_blank" href="https://www.linkedin.com/in/gehrigrankin/">linkedin.com/in/gehrigrankin</a>
+    getEmailAction = () => {
+        const { name, company, message } = this.state;
 
-                    <p className="header-2">Github: </p>
-                    <a target="_blank" href="https://github.com/gehrigrankin">github.com/gehrigrankin</a>
+        let subjectStr = this.state.name + ' from ' + this.state.company;
+        subjectStr.split(' ').join('%20');
+
+        return `mailto:rgrankin22@gmail.com?Subject=${subjectStr}&body=${message}`
+    }
+
+    render() {
+        const emailAction = this.getEmailAction()
+        return (
+            <div className="ContactMe page">
+                <div className="page-header">
+                    <p className="header-1">Contact Me</p>
                 </div>
-                <div className="email-me">
-                    <form action="mailto:rgrankin22@gmail.com" method="POST" encType="text/plain">
-                        <label class="label">Name</label>
-                        <div class="input-container">
-                            <Icon>
-                                <FontAwesomeIcon icon={faUser} />
-                            </Icon>
-                            <input type="text" placeholder="Jane Doe" />
-                        </div>
+                <Container>
+                    <Row className="h-75 align-items-center">
+                        <Col>
+                            <div className="information">
+                                <p className="header-2">Email: </p>
+                                <p>Rgrankin22@gmail.com</p>
 
-                        <label class="label">Company</label>
-                        <div class="input-container">
-                            <Icon>
-                                <FontAwesomeIcon icon={faAddressBook} />
-                            </Icon>
-                            <input type="text" placeholder="ex. Trilogy Education" />
-                        </div>
+                                <p className="header-2">Phone: </p>
+                                <p>(703) 939 - 7355</p>
 
-                        <label class="label">Message</label>
-                        <div className="input-container">
-                            <textarea class="textarea" placeholder="Textarea"></textarea>
-                        </div>
+                                <p className="header-2">LinkedIn: </p>
+                                <a target="_blank" href="https://www.linkedin.com/in/gehrigrankin/">linkedin.com/in/gehrigrankin</a>
 
-                        {/* 
-                            
+                                <p className="header-2">Github: </p>
+                                <a target="_blank" href="https://github.com/gehrigrankin">github.com/gehrigrankin</a>
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className="email-me">
 
-                            
+                                <label class="label">Name</label>
+                                <div class="input-container">
+                                    <Icon>
+                                        <FontAwesomeIcon icon={faUser} />
+                                    </Icon>
+                                    <input name="name" type="text" onChange={this.handleChange} placeholder="Jane Doe" />
+                                </div>
 
-                            
-                            
+                                <label class="label">Company</label>
+                                <div class="input-container">
+                                    <Icon>
+                                        <FontAwesomeIcon icon={faAddressBook} />
+                                    </Icon>
+                                    <input name="company" type="text" onChange={this.handleChange} placeholder="ex. Trilogy Education" />
+                                </div>
+                                    <label class="label">Message</label>
+                                    <FormControl name="message" onChange={this.handleChange} as="textarea" aria-label="With textarea" rows={3} />
 
-                            <button class="button is-link has-background-primary" type="submit">Submit</button> */}
-                    </form>
-                </div>
+                                <form action={emailAction} method="POST">
+                                    <Button className="mt-3" block type="submit">Submit</Button>
+                                </form>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
-        </div>
-    );
+        );
+    }
 }
+
+export default ContactMe;

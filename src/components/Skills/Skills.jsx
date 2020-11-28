@@ -97,7 +97,7 @@ export const Skills = () => {
                             </div>
                         </div>
                         <div className="frameworks">
-                            <p className="skills-header">Frameworks</p>
+                            <p className="skills-header">Frameworks & Libraries</p>
 
                             <div className="graph">
                                 <div className="flex">
