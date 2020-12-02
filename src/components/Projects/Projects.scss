@@ -1,0 +1,64 @@
+@import '../../../public/base.scss';
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.Projects {
+}
+
+.Project {
+    position: relative;
+    padding: 5px;
+    margin: 1.5rem auto;
+    width: 379px;
+
+    border-radius: 5px;
+    border: 5px solid rgba(50,50,50,0.75);
+
+    .text {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: none;
+        background-color: rgba(0,0,0,.87);
+
+        height: 100%;
+        padding: .5rem;
+        font-family: monospace;
+        font-size: 1rem;
+
+        .title {
+            font-family: 'Share Tech Mono', monospace;
+            color: $primary-red;
+
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: .25rem;
+        }
+    }
+
+    .launch-btn {
+        background-color: $primary-red;
+        border-color: $primary-red;
+
+        &:hover {
+            background-color: $primary-red;
+            border-color: white;
+        }
+    }
+
+    img, .text {
+        width: 359px;
+    }
+
+    img {
+        height: 200px;
+    }
+
+    &:hover {
+        border: 5px solid $primary-red;
+
+        .text {
+            display: inline;
+            text-align: center;
+        }
+    }
+}
