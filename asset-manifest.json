@@ -1,29 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio-2020/static/css/main.e9c06b20.chunk.css",
-    "main.js": "/portfolio-2020/static/js/main.e3ebce0b.chunk.js",
-    "main.js.map": "/portfolio-2020/static/js/main.e3ebce0b.chunk.js.map",
-    "runtime-main.js": "/portfolio-2020/static/js/runtime-main.106eb575.js",
-    "runtime-main.js.map": "/portfolio-2020/static/js/runtime-main.106eb575.js.map",
-    "static/css/2.c86cdfd5.chunk.css": "/portfolio-2020/static/css/2.c86cdfd5.chunk.css",
-    "static/js/2.27794549.chunk.js": "/portfolio-2020/static/js/2.27794549.chunk.js",
-    "static/js/2.27794549.chunk.js.map": "/portfolio-2020/static/js/2.27794549.chunk.js.map",
+    "main.css": "/portfolio-2020/static/css/main.495c562c.css",
+    "main.js": "/portfolio-2020/static/js/main.88a17946.js",
+    "static/media/azcImage.png": "/portfolio-2020/static/media/azcImage.49c1d17681de049fe033.png",
+    "static/media/Group-gen.png": "/portfolio-2020/static/media/Group-gen.1c5585f565e1e0344088.png",
+    "static/media/Skelly.png": "/portfolio-2020/static/media/Skelly.4a414e8dde27f3858b77.png",
+    "static/media/IIONS_login_logo.png": "/portfolio-2020/static/media/IIONS_login_logo.e5a040e1d0d26bbe946b.png",
+    "static/media/gehrigrankin.jpg": "/portfolio-2020/static/media/gehrigrankin.0509d500c17e472a4200.jpg",
     "index.html": "/portfolio-2020/index.html",
-    "precache-manifest.ce7e3c179a45fd79f9e09c7697c6543d.js": "/portfolio-2020/precache-manifest.ce7e3c179a45fd79f9e09c7697c6543d.js",
-    "service-worker.js": "/portfolio-2020/service-worker.js",
-    "static/css/2.c86cdfd5.chunk.css.map": "/portfolio-2020/static/css/2.c86cdfd5.chunk.css.map",
-    "static/css/main.e9c06b20.chunk.css.map": "/portfolio-2020/static/css/main.e9c06b20.chunk.css.map",
-    "static/js/2.27794549.chunk.js.LICENSE.txt": "/portfolio-2020/static/js/2.27794549.chunk.js.LICENSE.txt",
-    "static/media/Group-gen.png": "/portfolio-2020/static/media/Group-gen.305d651f.png",
-    "static/media/IIONS_login_logo.png": "/portfolio-2020/static/media/IIONS_login_logo.c0e11dc0.png",
-    "static/media/Skelly.png": "/portfolio-2020/static/media/Skelly.f325e045.png",
-    "static/media/azcImage.png": "/portfolio-2020/static/media/azcImage.dadf2806.png"
+    "main.495c562c.css.map": "/portfolio-2020/static/css/main.495c562c.css.map",
+    "main.88a17946.js.map": "/portfolio-2020/static/js/main.88a17946.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.106eb575.js",
-    "static/css/2.c86cdfd5.chunk.css",
-    "static/js/2.27794549.chunk.js",
-    "static/css/main.e9c06b20.chunk.css",
-    "static/js/main.e3ebce0b.chunk.js"
+    "static/css/main.495c562c.css",
+    "static/js/main.88a17946.js"
   ]
 }
