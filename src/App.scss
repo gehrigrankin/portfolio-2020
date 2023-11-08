@@ -12,16 +12,22 @@ main {
 }
 
 .main-container {
+  // margin-top: 2vh;
+  // margin-bottom: 2vh;
   text-align: left;
 
   .page {
     height: 100vh;
-    padding: .5rem 2rem;
+    padding: 2rem 2rem;
   }
 }
 
 .page {
-  overflow: scroll;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .header-1 {
@@ -36,10 +42,9 @@ font-family: 'Bungee Hairline';
 .header-2 {
   font-family: 'Bungee Hairline';
   color: rgb(200,200,200);
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   
-  margin-top: .5rem;
 }
 
 .primary-red-font {

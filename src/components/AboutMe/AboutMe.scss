@@ -7,12 +7,16 @@
         margin-left: 2rem;
     }
 
+    .about-me-content {
+        margin-top: 10vh;
+    }
+
     .text {
         font-family: monospace;
         font-size: 1.25rem;
 
         margin: auto;
-        margin-top: 10vh;
+        // margin-top: 10vh;
         max-width: 750px;
         background-color: grey;
         padding: 1.25rem;
@@ -23,5 +27,40 @@
         border-top: 50px solid #262626;
 
         color: #363636;
+    }
+
+    .information {
+        font-family: monospace;
+        font-size: 1.25rem;
+
+        .header-2 {
+            font-size: 1.75rem;
+            color: $primary-red;
+            margin-bottom: 0;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin: .5rem 0;
+        }
+
+        a {
+            color: white;
+        }
+    }
+
+    .linkedin-icon {
+        background-color: #0A66C2;
+        color: white;
+
+        // padding: 0px 10px;
+        font-size: 64px;
+
+        border-radius: 4px;
+    }
+
+    .github-icon {
+        padding: 0px 10px;
+        font-size: 64px;
     }
 }
