@@ -49,18 +49,21 @@
         }
     }
 
+    .picture-card {
+        position: relative;
+    }
+
+    .info-icons {
+        position: absolute;
+        bottom: 0;
+    }
+
     .linkedin-icon {
-        background-color: #0A66C2;
-        color: white;
-
-        // padding: 0px 10px;
+        color: #0A66C2;
         font-size: 64px;
-
-        border-radius: 4px;
     }
 
     .github-icon {
-        padding: 0px 10px;
-        font-size: 64px;
+        font-size: 60px;
     }
 }
