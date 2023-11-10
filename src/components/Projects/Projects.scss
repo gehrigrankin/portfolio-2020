@@ -2,7 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
 .Projects {
+    img {
+        max-height: 40vh !important;
+    }
+
+    .project-details {
+
+    }
+    a:hover {
+        cursor: pointer;
+    }
 }
+
 
 .Project {
     position: relative;
@@ -50,7 +61,7 @@
     }
 
     img {
-        height: 200px;
+        max-height: 200px !important;
     }
 
     &:hover {

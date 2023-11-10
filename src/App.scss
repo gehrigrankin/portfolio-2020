@@ -26,6 +26,7 @@ main {
   overflow: scroll;
 }
 
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -47,6 +48,9 @@ font-family: 'Bungee Hairline';
   
 }
 
+.monospace {
+  font-family: monospace;
+}
 .primary-red-font {
   color: $primary-red;
 }
@@ -55,6 +59,9 @@ font-family: 'Bungee Hairline';
 }
 .white-font {
   color: white;
+}
+.grey-font {
+  color: #939393;
 }
 
 input[type=text] {

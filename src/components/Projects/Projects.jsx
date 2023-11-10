@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { useState } from 'react';
+import { Container, Row, Col, Carousel, Image } from 'react-bootstrap';
 import Project from './components/Project'
 
 import azcImg from './images/azcImage.png';
@@ -7,25 +8,15 @@ import skellyImg from './images/Skelly.png';
 import groupGenImg from './images/Group-gen.png';
 import iionsLogo from './images/IIONS_login_logo.png';
 
+import ProjectsArr from './projects.json'
+
 import './Projects.scss';
 
 export const Projects = () => {
-    const descriptions = {
-        azc: `Full stack web scraping application using MongoDB, Express, React, 
-            Node.js, and User Authentication. This app scrapes www.AZCentral.com and 
-            stores news articles to your profile and into a Mongo Database.`,
-        iions: `IIONS is a web application used by in-house analysts to automate
-                the process of medical insurance rembursement. My job while I was there
-                was to recreate the front end. Unfortunatley it is a private website. `,
-        skelly: `Skelly is an online tool that allows you to customize a skeleton for 
-                various project types. It uses various NPM packages to allow a user to 
-                customize the start of a project through a web interface. The structure 
-                is then delivered to the user as a zip file. It is not hosted anymore.`,
-        groupGen: `The Skill-based group generator. This application was developed to 
-                    assist Trilogy Instructors in equally skilled group generation. 
-                    A user interface is currently being developed in React and will 
-                    have the ability for students to enter their own name and skill level.`,
+    const [index, setIndex] = useState(0);
 
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
     }
 
     return (
@@ -34,7 +25,65 @@ export const Projects = () => {
                 <p className="header-1">Projects</p>
             </div>
             <div className="projects py-5">
+                <Carousel style={{height: '45vh'}} activeIndex={index} onSelect={handleSelect}>
+                    <Carousel.Item interval={99999999} className="h-100">
+                        <Image
+                            className="d-block m-auto"
+                            src={azcImg}
+                            alt="First slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={99999999} className="h-100">
+                        <Image
+                            className="d-block m-auto"
+                            src={iionsLogo}
+                            alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={99999999} className="h-100">
+                        <Image
+                            className="d-block m-auto"
+                            src={skellyImg}
+                            alt="Third slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item interval={99999999} className="h-100">
+                        <Image
+                            className="d-block m-auto"
+                            src={groupGenImg}
+                            alt="Fourth slide"
+                        />
+                    </Carousel.Item>
+                </Carousel>
                 <Row>
+                    <Col xl={{ span: 8, offset: 2 }}>
+                    <div className="project-details">
+                        <h1 className="text-center white-font">{ProjectsArr[index].projectName}</h1>
+
+                        <p className="header-2 primary-red-font mb-0">technologies used:</p>
+                        <p className="header-3 monospace mb-3">{ProjectsArr[index].techUsed}</p>
+
+                        {ProjectsArr[index].githubLink ? 
+                            <span className="monospace grey-font mr-5">
+                                Link to codebase:  <a className="secondary-red-font">{ProjectsArr[index].githubLink}</a>
+                            </span>
+                        : null}
+
+                        {ProjectsArr[index].webpageLink ? 
+                            <span className="monospace grey-font ml-5">
+                                Deployed Webpage: <a className="secondary-red-font">{ProjectsArr[index].webpageLink}</a>
+                            </span>
+                            : null}
+                        
+                       
+                        
+
+                        <p className="mt-4">{ProjectsArr[index].description}</p>
+                    </div>
+                    </Col>
+                </Row>
+                
+                {/* <Row>
                     <Col className="mt-3" md={12} lg={6} xl={4}>
                         <Project
                             title="AZ Central Scraper"
@@ -69,7 +118,7 @@ export const Projects = () => {
                             btnSrc="https://still-brook-83736.herokuapp.com/"
                         />
                     </Col>
-                </Row>
+                </Row> */}
             </div>
         </div>
     );
