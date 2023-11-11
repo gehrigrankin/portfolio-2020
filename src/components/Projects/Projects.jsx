@@ -65,13 +65,13 @@ export const Projects = () => {
 
                         {ProjectsArr[index].githubLink ? 
                             <span className="monospace grey-font mr-5">
-                                Link to codebase:  <a className="secondary-red-font">{ProjectsArr[index].githubLink}</a>
+                                Link to codebase:  <a target="_blank" href={`https://${ProjectsArr[index].githubLink}`}  className="secondary-red-font">{ProjectsArr[index].githubLink}</a>
                             </span>
                         : null}
 
                         {ProjectsArr[index].webpageLink ? 
                             <span className="monospace grey-font ml-5">
-                                Deployed Webpage: <a className="secondary-red-font">{ProjectsArr[index].webpageLink}</a>
+                                Deployed Webpage: <a href={ProjectsArr[index].webpageLink} target="_blank" className="secondary-red-font">{ProjectsArr[index].webpageLink}</a>
                             </span>
                             : null}
                         

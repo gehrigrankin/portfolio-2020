@@ -2,29 +2,29 @@
     "0": {
         "projectName": "AZ Central News Scraper",
         "techUsed": "Javascript, React.js, Node.js, MongoDB, Express.js, cheerio, axios, Heroku deployment, User Authentication ",
-        "githubLink": "www.github.com",
-        "webpageLink": "azc.com" ,
-        "description": "Full stack web scraping application using MongoDB, Express, React, Node.js, and User Authentication. This app scrapes www.AZCentral.com and stores news articles to your profile and into a Mongo Database."
+        "githubLink": "github.com/gehrigrankin/News-Scraper-v2",
+        "webpageLink": "" ,
+        "description": "Full stack web scraping application using MongoDB, Express, React, Node.js, and User Authentication. This app scrapes www.AZCentral.com and stores news articles to your profile and into a MongoDb Database. It was deployed using heroku until heroku got rid of their free plan."
     },
     "1": {
-        "projectName": "IIons",
-        "techUsed": "javascript, react",
-        "githubLink": "www.github.com/iions",
+        "projectName": "IIONS",
+        "techUsed": "MERN Stack, Javascript, HTML, CSS, SCSS, Bootstrap, ReactJS, Redux, ExpressJS, NodeJS, MySQL, MongoDB, Git, Agile Development, JSON, RESTful API, Test Driven Development (TDD)",
+        "githubLink": "",
         "webpageLink": "",
-        "description": "IIONS is a web application used by in-house analysts to automate the process of medical insurance rembursement. My job while I was there was to recreate the front end. Unfortunatley it is a private website."
+        "description": "IIONS is a web application used by in-house analysts to automate the process of medical insurance rembursement. The application was built with React.js and Bootstrap on the front end, and NodeJS, MySQL, and MongoDB on the back end. During the time I worked on IIONS, I redesigned and modernized the front end and gained some mentoring experience as well. Unfortunatley it is a private website."
     },
     "2": {
         "projectName": "Skelly",
-        "techUsed": "javascript",
-        "githubLink": "www.github.com/skelly",
+        "techUsed": "Javascript, Handlebars, Materialize, HTML, CSS, ExpressJS",
+        "githubLink": "www.github.com/ivme83/skeletor",
         "webpageLink": "",
-        "description": "Skelly is an online tool that allows you to customize a skeleton for various project types. It uses various NPM packages to allow a user to customize the start of a project through a web interface. The structure is then delivered to the user as a zip file. It is not hosted anymore."
+        "description": "This was part of a group project where I was assigned with designed and developing the front end of the project using Javascript, Handlebars, Materialize, and Express.js. Skelly is an online tool that allows you to customize a skeleton for various project types. It uses various NPM packages to allow a user to customize the start of a project through a web interface. The structure is then delivered to the user as a zip file. It is not hosted anymore."
     },
     "3": {
         "projectName": "Group Gen",
-        "techUsed": "javascript",
-        "githubLink": "www.github.com/groupgen",
+        "techUsed": "Javascript, HTML, CSS",
+        "githubLink": "github.com/gehrigrankin/bootcamp-group-generator",
         "webpageLink": "" ,
-        "description": "The Skill-based group generator. This application was developed to assist Trilogy Instructors in equally skilled group generation. A user interface is currently being developed in React and will have the ability for students to enter their own name and skill level."
+        "description": "The Skill-based group generator. This application was developed to assist Trilogy Instructors in creating groups for class projects based on there front end/back end skills. I built this app while I was working as a Teachers Assistant at a bootcamp to help the class I was working with and continue my knowledge as a web developer at the same time."
     }
 }
