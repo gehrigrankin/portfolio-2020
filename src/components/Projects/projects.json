@@ -4,7 +4,7 @@
         "techUsed": "Javascript, React.js, Node.js, Pubnub, Github Deployment, Mobile Responsiveness",
         "githubLink": "github.com/gehrigrankin/messenger-real-time",
         "webpageLink": "https://gehrigrankin.github.io/messenger-real-time/" ,
-        "description": "I built this application in a take home coding test that landed me my last position at Execute to Win. I was tasked with developing a real-time messaging app using the Pubnub npm package. I used the Twitter direct message layout for inspiration and I am really please with how the front end turned out."
+        "description": "I built this application in a take home coding test that landed me my last position at Execute to Win. I was tasked with developing a real-time messaging app using ReactJS and the Pubnub npm package. I used the Twitter direct message layout for inspiration and I am really please with how the front end turned out."
     },
     "1": {
         "projectName": "AZ Central News Scraper",
