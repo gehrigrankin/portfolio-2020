@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio-2020/static/css/main.908854b4.css",
-    "main.js": "/portfolio-2020/static/js/main.1b37b1e7.js",
+    "main.css": "/portfolio-2020/static/css/main.5ea5e914.css",
+    "main.js": "/portfolio-2020/static/js/main.ac39ad15.js",
     "static/media/azcImage.png": "/portfolio-2020/static/media/azcImage.49c1d17681de049fe033.png",
     "static/media/Group-gen.png": "/portfolio-2020/static/media/Group-gen.1c5585f565e1e0344088.png",
     "static/media/Skelly.png": "/portfolio-2020/static/media/Skelly.4a414e8dde27f3858b77.png",
+    "static/media/messenger-pic.PNG": "/portfolio-2020/static/media/messenger-pic.3a93086781bf0213a50c.PNG",
     "static/media/IIONS_login_logo.png": "/portfolio-2020/static/media/IIONS_login_logo.e5a040e1d0d26bbe946b.png",
     "static/media/gehrigrankin.jpg": "/portfolio-2020/static/media/gehrigrankin.0509d500c17e472a4200.jpg",
     "index.html": "/portfolio-2020/index.html",
-    "main.908854b4.css.map": "/portfolio-2020/static/css/main.908854b4.css.map",
-    "main.1b37b1e7.js.map": "/portfolio-2020/static/js/main.1b37b1e7.js.map"
+    "main.5ea5e914.css.map": "/portfolio-2020/static/css/main.5ea5e914.css.map",
+    "main.ac39ad15.js.map": "/portfolio-2020/static/js/main.ac39ad15.js.map"
   },
   "entrypoints": [
-    "static/css/main.908854b4.css",
-    "static/js/main.1b37b1e7.js"
+    "static/css/main.5ea5e914.css",
+    "static/js/main.ac39ad15.js"
   ]
 }
